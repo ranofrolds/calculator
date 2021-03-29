@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drinas Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link rel="icon" href="calculator-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload= main()>
+    <div class="calculadora">  
+        <input id="inpt" type="text" value="0" max="999999" readonly>
+        <div class="buttons">
+            <button class="botao_operacao" data-action="clear">C</button>
+            <button class="botao_operacao" data-action="clear_all">AC</button>
+            <button class="botao_operacao" data-action="percent">%</button>
+            <button class="botao_operacao" id="division" data-action="division">&divide</button>
+            <button class="botao_numero" value="7">7</button>
+            <button class="botao_numero" value="8">8</button>
+            <button class="botao_numero" value="9">9</button>
+            <button class="botao_operacao" id="multiply" data-action="multiply">&times;</button>
+            <button class="botao_numero" value="4">4</button>
+            <button class="botao_numero" value="5">5</button>
+            <button class="botao_numero" value="6">6</button>
+            <button class="botao_operacao" id="subtract" data-action="subtract">-</button>
+            <button class="botao_numero" value="1">1</button>
+            <button class="botao_numero" value="2">2</button>
+            <button class="botao_numero" value="3">3</button>
+            <button class="botao_operacao" id="add"data-action="add">+</button>
+            <button class="botao_operacao" data-action="sinal">+/-</button>
+            <button class="botao_numero" value="0">0</button>
+            <button class="botao_operacao" data-action="point">.</button>
+            <button class="botao_operacao" data-action="result">=</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
